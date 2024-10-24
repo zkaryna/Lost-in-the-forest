@@ -81,12 +81,17 @@ tw-passage {
   justify-content: space-between;
   padding: 40px;
 </style>
+<button id="play-audio">Play Audio</button>
 <script id="twine-user-script" type="text/twine-javascript">
   var audio = document.createElement('audio');
   audio.src = 'https://cdn.pixabay.com/download/audio/2023/01/26/audio_82b1334d3c.mp3?filename=forest-birds-ambient-14675.mp3';
   audio.loop = true;
-  audio.play();
+
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
 </script>
+
 
 </script><tw-passagedata pid="1" name="Start to play" tags="" position="1300,100" size="100,100">You wake up in a dark, mysterious forest. You don’t remember how you got here. The only thing you can sense is a faint breeze and the damp smell of trees. Your task is to find your way home, but every decision you make matters. Will you make it out of the forest in one piece?A feeling of anxiety grips you. You look around and see three paths in front of you.
 
